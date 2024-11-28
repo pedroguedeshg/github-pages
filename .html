@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WraPack - Embalagens para Fast Food</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header .logo img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .produtos {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .produto-item {
+            text-align: center;
+        }
+
+        .produto-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Ajustes para a responsividade */
+        @media (max-width: 768px) {
+            .produtos {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .produto-item {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/150" alt="WraPack Logo"> <!-- Substitua pelo seu logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bem-vindo à WraPack</h1>
+        <p>As melhores soluções em embalagens para seu fast food!</p>
+    </section>
+
+    <section class="produtos">
+        <h2>Nosso portfólio de embalagens</h2>
+        <div class="produto-item">
+            <img src="https://via.placeholder.com/200" alt="Embalagem para hambúrguer">
+            <p>Embalagem para hambúrguer</p>
+        </div>
+        <div class="produto-item">
+            <img src="https://via.placeholder.com/200" alt="Embalagem para batata frita">
+            <p>Embalagem para batata frita</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 WraPack - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        // Exemplo de script básico que pode ser usado para interação futura
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Página carregada!');
+        });
+    </script>
+</body>
+</html>
